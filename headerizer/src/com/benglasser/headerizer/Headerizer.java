@@ -84,7 +84,7 @@ public class Headerizer {
 		try {
 			File tmp = File.createTempFile("tmp", null);
 			FileUtils.copyFile(file, tmp);
-			FileUtils.writeStringToFile(file, cli.Config().getString(CLIP.HEADER) + "\n\r");
+			FileUtils.writeStringToFile(file, cli.Config().getString(CLIP.HEADER) + "\n");
 			FileUtils.writeStringToFile(file, FileUtils.readFileToString(tmp),
 					true);
 
